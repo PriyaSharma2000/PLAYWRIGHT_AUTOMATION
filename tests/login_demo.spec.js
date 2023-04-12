@@ -8,7 +8,7 @@ test('Login Test 1', async({page})=>{
     await page.locator("text=Sign in").click();
 })
 
-test.only('Login test 2', async({page})=>{
+test('Login test 2', async({page})=>{
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     await page.pause();
     await page.getByPlaceholder('Username').fill("Admin");

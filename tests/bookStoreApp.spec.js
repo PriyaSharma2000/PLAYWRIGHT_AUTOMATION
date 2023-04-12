@@ -38,7 +38,7 @@ test.describe("book store tests", ()=>{
 });
 
 test.describe("book store api tests", ()=>{
-    test.only("account authorization post method", async({page,request})=>{
+    test("account authorization post method", async({page,request})=>{
         const pageUrl = page.goto(`${baseUrl}/swagger/#/Account/AccountV1AuthorizedPost`);
         const _response = await request.post(pageUrl, {
             headers: {
