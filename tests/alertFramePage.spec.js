@@ -8,6 +8,7 @@ beforeEach(async () => {
   browser = await playwright['chromium'].launch({headless: false});
   context = await browser.newContext();
   page = await context.newPage();
+  console.log(page);
   alertFrame = new AlertFramePage(page);
 });
 
