@@ -1,0 +1,22 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-elements": "mocha ./tests/elements.spec.js --timeout 20000",
+    "test-forms": "mocha ./tests/forms.spec.js  --timeout 20000",
+    "test-alertFrame": "mocha ./tests/alertFramePage.spec.js  --timeout 20000",
+    "test-widgets": "mocha ./tests/widgets.spec.js  --timeout 20000",
+    "test-interactions": "mocha ./tests/interactions.spec.js  --timeout 20000",
+    "test-calc": "mocha ./tests/calc.spec.js --timeout 20000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
