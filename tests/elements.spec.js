@@ -3,7 +3,7 @@ const {ElementsPage} = require("../pages/elementsPage");
 const { expect } = require('chai');
 
 
-let page, browser, context;
+let page, browser, context, a;
 
 beforeEach(async () => {
   browser = await playwright['chromium'].launch({headless: false});
