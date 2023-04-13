@@ -4,7 +4,7 @@ const chai = require('chai');
 global.expect = chai.expect;
 global.expect = playwright.expect;
 
-let page, browser, context;
+let page, browser, context, a;
 
 // beforeEach(async () => {
 //   browser = await playwright['chromium'].launch({headless: false});
