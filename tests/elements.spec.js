@@ -1,7 +1,6 @@
 const playwright = require("@playwright/test");
 const {ElementsPage} = require("../pages/elementsPage");
-const { expect } = require('chai');
-
+const chai = require('chai');
 
 
 let page, browser, context,c;

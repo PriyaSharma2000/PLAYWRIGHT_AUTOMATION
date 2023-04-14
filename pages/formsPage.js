@@ -1,5 +1,4 @@
 const { expect, context} = require("@playwright/test");
-const page = require('./page');
 
 const firstName = '#firstName';
 const lastName = '#lastName';
@@ -11,7 +10,7 @@ const subjectsInput = '#subjectsInput';
 const hobbies = 'Sports';
 const uploadPicture = '#uploadPicture';
 const currentAddress = '#currentAddress';
-const state = '#state';
+const state ="#state";
 const getState = 'Uttar Pradesh';
 const city = '#city';
 const getCity = 'Lucknow';
@@ -19,27 +18,9 @@ const submit = '#submit';
 const closeBtn = '#closeLargeModal';
 
 exports.FormsPage = class FormsPage {
-    constructor() {
-        super();
-    };
-    element = {
-        formaPageUrl: "https://demoqa.com/automation-practice-form",
-        firstName: '#firstName',
-        lastName: '#lastName',
-        userEmail: '#userEmail',
-        gender: "Female",
-        userNumber: '#userNumber',
-        dateOfBirthInput: '#dateOfBirthInput',
-        subjectsInput: '#subjectsInput',
-        hobbies: 'Sports',
-        uploadPicture: '#uploadPicture',
-        currentAddress: '#currentAddress',
-        state: '#state',
-        getState: 'Uttar Pradesh',
-        city: '#city',
-        getCity: 'Lucknow',
-        submit: '#submit',
-        closeBtn: '#closeLargeModal'
+    constructor(page, context) {
+        this.page = page;
+        this.context = context;
     };
     async gotoFormsPage() {
         await this.page.goto("https://demoqa.com/automation-practice-form");
