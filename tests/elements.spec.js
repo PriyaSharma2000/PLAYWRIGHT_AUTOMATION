@@ -2,7 +2,9 @@ const playwright = require("@playwright/test");
 const {ElementsPage} = require("../pages/elementsPage");
 const chai = require('chai');
 
-let page, browser, context, a;
+
+let page, browser, context,c;
+
 
 beforeEach(async () => {
   browser = await playwright['chromium'].launch({headless: false});
